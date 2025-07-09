@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sanjul Jain | Web Portfolio</title>
+  <!-- FontAwesome -->
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Montserrat', sans-serif;
+      background: linear-gradient(to right top, #e0f7fa, #fce4ec);
+      color: #333;
+      min-height: 100vh;
+      padding: 30px 15px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .container {
+      background: #ffffff;
+      max-width: 1050px;
+      width: 100%;
+      border-radius: 20px;
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+      overflow: hidden;
+      animation: fadeIn 1.2s ease-in-out;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .top-section {
+      display: flex;
+      flex-wrap: wrap;
+      padding: 40px;
+      background: linear-gradient(to right, #1b6f86, #96d4dd);
+      color: #fff;
+    }
+
+    .profile-image {
+      flex: 1 1 250px;
+      text-align: center;
+      margin-bottom: 20px;
+    }
+
+    .profile-image img {
+      width: 220px;
+      height: 220px;
+      object-fit: cover;
+      border-radius: 50%;
+      border: 5px solid #fff;
+      box-shadow: 0 6px 20px rgba(0, 0, 0, 0.25);
+      transition: transform 0.4s ease;
+    }
+
+    .profile-image img:hover {
+      transform: scale(1.05);
+    }
+
+    .content {
+      flex: 2 1 450px;
+      padding-left: 30px;
+    }
+
+    h1 {
+      font-size: 2.5em;
+      font-weight: 700;
+      margin-bottom: 10px;
+    }
+
+    .subheading {
+      font-size: 1.1em;
+      margin-bottom: 20px;
+      font-weight: 500;
+    }
+
+    .bio {
+      font-size: 1.05em;
+      line-height: 1.6;
+      color: #fefefe;
+    }
+
+    .highlight {
+      color: #060d21;
+      font-weight: bold;
+    }
+
+    .social-links {
+      margin-top: 20px;
+    }
+
+    .social-links a {
+      background-color: #0077b5;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 30px;
+      text-decoration: none;
+      font-size: 0.95em;
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    .social-links a:hover {
+      background-color: #005983;
+    }
+
+    .section {
+      padding: 30px 40px;
+      border-top: 1px solid #eee;
+    }
+
+    .section h2 {
+      font-size: 1.8em;
+      color: #00695c;
+      margin-bottom: 15px;
+    }
+
+    .section p {
+      font-size: 1em;
+      line-height: 1.6;
+      color: #444;
+    }
+
+    .skills-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 15px;
+    }
+
+    .skills-list span {
+      background: #00bcd4;
+      color: white;
+      padding: 8px 14px;
+      border-radius: 20px;
+      font-size: 0.9em;
+      font-weight: 500;
+    }
+
+    @media (max-width: 768px) {
+      .top-section {
+        flex-direction: column;
+        padding: 30px 20px;
+        text-align: center;
+      }
+
+      .content {
+        padding-left: 0;
+      }
+
+      h1 {
+        font-size: 2em;
+      }
+
+      .section {
+        padding: 25px 20px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="top-section">
+      <div class="profile-image">
+        <img src="PROFILE2.jpg" alt="Sanjul Jain Profile Picture" />
+      </div>
+      <div class="content">
+        <h1>Sanjul Jain</h1>
+        <div class="subheading">| Web Developer | Tech Explorer</div>
+        <p class="bio">
+          Hi! I’m <span class="highlight">Sanjul Jain</span>, a passionate BCA student from Teerthanker Mahaveer University.
+           I love creating responsive, clean, and user-friendly web applications. Skilled in
+            <span class="highlight">HTML</span>, <span class="highlight">CSS</span>,
+             <span class="highlight">C++</span>, and <span class="highlight">SQL</span>,
+              I strive to grow as a developer and learn the latest in web tech. 
+              Let’s <span class="highlight">build something amazing</span> together!
+        </p>
+        <div class="social-links">
+          <a href="https://www.linkedin.com/in/sanjul-iain-116a91327" target="_blank">
+            <i class="fab fa-linkedin"></i> Connect on LinkedIn
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>About Me</h2>
+      <p>I’m driven by curiosity and a love for clean design. Whether it’s front-end coding or database logic,
+         I approach each project with creativity and dedication.I focus on writing clean, efficient code and continuously learning new technologies.
+          I enjoy solving real-world problems through tech and believe in building with purpose, creativity, and precision.
+          I believe in continuous growth, teamwork, and building software that makes a difference.</p>
+    </div>
+
+    <div class="section">
+      <h2>Skills</h2>
+      <div class="skills-list">
+        <span>HTML5</span>
+        <span>CSS3</span>
+         <span>JAVASCRIPT</span>
+        <span>C++</span>
+        <span>SQL</span>
+        <span>Responsive Design</span>
+        <span>Git & GitHub</span>
+      </div>
+    </div>
+
+    <div class="section">
+      <h2>Contact</h2>
+      <p>Email: <strong>sanjuljain236@gmail.com</strong><br>
+      Location: Firozabad (UP), India</p>
+    </div>
+  </div>
+</body>
+</html>
